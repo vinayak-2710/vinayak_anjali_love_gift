@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff6fa">
+<title>Love.exe — Vinayak & Anjali 💗</title>
+<style>
+:root{--rose:#f0528a;--pink:#ffd5e2;--cream:#fff9f7;--ink:#442b3b;--plum:#7e4266;--muted:#846b7b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:ui-rounded,"Segoe UI",system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--cream);overflow-x:hidden}
+.bg-glow{position:fixed;inset:0;pointer-events:none;z-index:-2;background:radial-gradient(circle at 10% 10%,#ffe0ec 0,transparent 32%),radial-gradient(circle at 90% 70%,#e8ddff 0,transparent 30%),#fff9f7}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:5}.floaty{position:absolute;bottom:-40px;animation:rise linear forwards;opacity:.8}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px clamp(18px,6vw,80px);max-width:1250px;margin:auto}.logo{font-weight:900;letter-spacing:-.04em;color:var(--plum)}.logo span{color:var(--rose)}.nav-note{font-size:.86rem;color:#966a84}
+.hero{min-height:83vh;display:grid;place-items:center;text-align:center;padding:50px 22px 85px;position:relative}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #ffc1d4;background:#fff9fc;border-radius:99px;padding:9px 15px;font-size:.82rem;color:#9b4e70;font-weight:700}
+h1{font-size:clamp(2.8rem,8vw,6.6rem);line-height:.98;letter-spacing:-.075em;max-width:950px;margin:24px auto 18px}.gradient{background:linear-gradient(110deg,#f34f8a,#a05bba 65%,#ed8d9f);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{max-width:640px;margin:0 auto;color:#806579;font-size:clamp(1rem,2vw,1.2rem);line-height:1.8}.cta{display:inline-flex;align-items:center;gap:10px;margin-top:28px;border:0;border-radius:99px;padding:15px 23px;background:var(--ink);color:white;font-weight:800;font-size:1rem;cursor:pointer;box-shadow:0 12px 30px #63354a2b;transition:.2s}.cta:hover{transform:translateY(-3px);box-shadow:0 16px 34px #63354a40}
+.hero-heart{font-size:clamp(3rem,8vw,6rem);display:block;filter:drop-shadow(0 12px 15px #ff8aaf55);animation:heartbeat 1.7s ease-in-out infinite}@keyframes heartbeat{0%,100%{transform:scale(1)}15%{transform:scale(1.12)}30%{transform:scale(1)}45%{transform:scale(1.07)}}
+.sparkle{position:absolute;color:#ee80a6;font-size:24px;animation:twinkle 2s ease-in-out infinite}@keyframes twinkle{50%{transform:scale(.65) rotate(25deg);opacity:.4}}
+section{padding:70px 22px;max-width:1120px;margin:auto}.section-head{text-align:center;margin-bottom:32px}.kicker{text-transform:uppercase;letter-spacing:.17em;color:#c15d86;font-size:.72rem;font-weight:900}h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.055em;margin:10px 0}.section-head p{color:#896d80;line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:#ffffffc9;border:1px solid #f4d9e3;border-radius:24px;padding:25px;box-shadow:0 12px 35px #8b45610b;transition:transform .25s,border-color .25s}.card:hover{transform:translateY(-5px) rotate(-.4deg);border-color:#f5a8c3}.card .emoji{font-size:2rem}.card h3{margin:14px 0 8px;font-size:1.12rem}.card p{margin:0;color:#846b7b;line-height:1.7;font-size:.95rem}
+.note{margin:28px auto 0;max-width:760px;background:#fff0f5;border:1px dashed #f0a1bd;border-radius:22px;padding:22px 25px;text-align:center;line-height:1.8}.note strong{color:#b74776}
+.memory{max-width:760px;margin:22px auto 0;background:#fff;border:1px solid #f3d5e1;border-radius:24px;padding:22px;text-align:center}.memory .big{font-size:2rem;letter-spacing:.08em;color:#c64d7f;font-weight:900}.memory p{line-height:1.7;color:#846b7b;margin-bottom:0}
+.love-letter{max-width:780px;margin:auto;background:#fff;border:1px solid #f3d5e1;border-radius:30px;padding:clamp(25px,5vw,52px);box-shadow:0 25px 70px #7e426610;position:relative;overflow:hidden}.love-letter:after{content:"♡";position:absolute;font-size:170px;color:#fff0f5;right:10px;top:-35px;z-index:0}.love-letter>*{position:relative;z-index:1}.love-letter p{line-height:1.95;color:#74586a;font-size:1.02rem}.signature{font-family:Georgia,serif;font-style:italic;font-size:1.5rem;color:#c64d7f;margin-top:24px}
+.counter-wrap{text-align:center}.counter{display:inline-block;background:#fff;border:1px solid #f4d5e1;border-radius:24px;padding:25px 28px;margin:10px;min-width:200px}.counter strong{display:block;font-size:2.2rem;color:#d54f83;letter-spacing:-.04em}.counter span{font-size:.85rem;color:#8b6c7e}
+.surprise{text-align:center;padding-bottom:90px}.surprise-box{max-width:740px;margin:auto;padding:clamp(25px,5vw,48px);border-radius:30px;background:linear-gradient(135deg,#ffe4ed,#f2e7ff);border:1px solid #f2d2e5}#surpriseMessage{min-height:70px;line-height:1.8;font-size:1.12rem;color:#704a66;margin:22px auto 0;max-width:560px}
+footer{text-align:center;padding:25px;color:#a18396;font-size:.85rem;border-top:1px solid #f4e2e9}footer span{color:#e75e90}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.hero{min-height:76vh}.nav-note{display:none}section{padding-top:52px;padding-bottom:52px}.card{padding:22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="bg-glow"></div><div id="hearts"></div>
+<nav><div class="logo">love.exe <span>♥</span></div><div class="nav-note">compiled with love by Vinayak Singh ✦ for Anjali Singh</div></nav>
+<main>
+<section class="hero" id="top">
+<span class="sparkle" style="left:14%;top:23%">✦</span><span class="sparkle" style="right:15%;top:30%;animation-delay:.6s">✧</span>
+<div>
+<span class="eyebrow">✿ A very important scientific announcement ✿</span>
+<span class="hero-heart">💗</span>
+<h1>Hey, Barbelle.<br><span class="gradient">You're my favorite.</span></h1>
+<p class="sub">Anjali Singh, I could've built an app, trained an AI, or finally learned how to fold a fitted sheet. Instead, I coded you this tiny corner of the internet. Because you're my favorite notification, my favorite person, and the only person who can make “Mimimimimi” sound like an entire conversation. 🥹</p>
+<button class="cta" onclick="document.querySelector('#reasons').scrollIntoView({behavior:'smooth'})">Open your little gift <span>↓</span></button>
+</div>
+</section>
+<section id="reasons">
+<div class="section-head"><div class="kicker">the extremely official report</div><h2>Reasons you're <span class="gradient">my favorite human</span></h2><p>Peer-reviewed by Vinayak. Anjali's cuteness made further research impossible.</p></div>
+<div class="grid">
+<article class="card"><div class="emoji">🌷</div><h3>You make ordinary days glow</h3><p>Even a boring Tuesday gets upgraded to a “wait, I get to talk to Anjali today” kind of day.</p></article>
+<article class="card"><div class="emoji">😂</div><h3>Your laugh is dangerous</h3><p>One giggle from you and suddenly I forget what I was saying. My brain has filed a formal complaint, Barbelle.</p></article>
+<article class="card"><div class="emoji">🫶</div><h3>You feel like home</h3><p>Not a place. A person. The one I can be weird around without submitting a three-page explanation.</p></article>
+<article class="card"><div class="emoji">✨</div><h3>You make me want to grow</h3><p>You inspire me to be kinder, braver, and approximately 14% less annoying. Progress is progress.</p></article>
+<article class="card"><div class="emoji">🍟</div><h3>You are snack-worthy</h3><p>I would share my fries with you. Please understand the legal and emotional significance of this, Anjali.</p></article>
+<article class="card"><div class="emoji">💌</div><h3>It's the little things</h3><p>Your messages, your stories, your tiny habits—even “Mimimimimi”—become the parts of my day I replay with a smile.</p></article>
+</div>
+<div class="note">📢 <strong>Official announcement:</strong> Barbelle has been promoted to Chief Happiness Officer, Head of Hugs, and Permanent Owner of a Very Large Piece of Vinayak's Heart. Salary: unlimited affection. Benefits: forehead kisses. Terms and conditions: I will still steal one fry. 💗</div>
+<div class="memory"><div class="kicker">classified couple lore</div><div class="big">Mimimimimi 💞</div><p>Five syllables. Approximately 900 feelings. Zero context required. To everyone else: a mystery. To us: premium-quality nonsense, now officially preserved in code.</p></div>
+</section>
+<section>
+<div class="section-head"><div class="kicker">from Vinayak's heart, not a template</div><h2>A little love letter 💌</h2></div>
+<div class="love-letter">
+<p>Hey, my Barbelle. ❤️</p>
+<p>I wanted to make you something that wasn't just another message on a screen. So I put a little time, a little code, a whole lot of heart emojis, and an unreasonable amount of affection into this tiny gift for you.</p>
+<p>Anjali, I hope you know how much you mean to me. I love the way you make me smile, the way the smallest things remind me of you, and how being close to you can make a rough day feel softer. You don't have to be perfect, cheerful, or have everything figured out to be loved by me. You can have your messy days, your quiet days, your “I don't know what I'm doing” days. I want to be there for those, too.</p>
+<p>And of course, I love our little brand of nonsense. “Mimimimimi” may never make sense to the outside world, but honestly? Some of the best things don't need an explanation. They just need the right person to share them with. 🥹</p>
+<p>If life were a giant, confusing program, you would be the feature I would never remove—even if you came with 400 bugs and ate all my RAM. Especially then, Barbelle. I'd just call it a feature, not a bug. 😭</p>
+<p>Thank you for being you. I hope I can make you feel as appreciated, safe, and loved as you make me feel. This little website might close eventually, but my affection for you isn't a browser tab. You are so, so special to me.</p>
+<p>So here's your reminder: in a world full of people and possibilities, I'm really glad it's you. It's you I want to laugh with, be silly with, support, and keep making little memories with—one “Mimimimimi” at a time.</p>
+<div class="signature">Always on your team, 💗<br>Vinayak Singh<br><small style="font-size:.9rem">P.S. Barbelle, you are illegally adorable.</small></div>
+</div>
+</section>
+<section class="counter-wrap">
+<div class="section-head"><div class="kicker">the totally real statistics department</div><h2>Our relationship, by the numbers</h2><p>Calculations performed by a heart with absolutely no chill.</p></div>
+<div class="counter"><strong>∞</strong><span>reasons to adore Anjali</span></div><div class="counter"><strong>0</strong><span>days you're not worth it</span></div><div class="counter"><strong>100%</strong><span>team Vinayak + Barbelle</span></div><div class="counter"><strong>404</strong><span>chances of not missing you: not found</span></div>
+</section>
+<section class="surprise">
+<div class="surprise-box"><div class="kicker">one last thing, Barbelle</div><h2>Your personal dose of love 💝</h2><p style="color:#846b7b;line-height:1.7">Tap the button. The computer has prepared some very important feelings, and Vinayak has absolutely no chill.</p>
+<button class="cta" onclick="revealSurprise()">Deliver a dose of love ✨</button><div id="surpriseMessage" aria-live="polite">Anjali, your surprise is waiting right here…</div>
+</div>
+</section>
+</main>
+<footer>Hand-coded with <span>♥</span> by Vinayak Singh, for Anjali Singh — my Barbelle. <br>Built with code, powered by love, and permanently running Mimimimimi.exe.</footer>
+<script>
+const emojis=['💗','💕','💖','💘','✨','🌸','♥'];
+function makeHeart(){const el=document.createElement('span');el.className='floaty';el.textContent=emojis[Math.floor(Math.random()*emojis.length)];el.style.left=Math.random()*100+'%';el.style.fontSize=(14+Math.random()*22)+'px';el.style.animationDuration=(6+Math.random()*7)+'s';document.getElementById('hearts').appendChild(el);setTimeout(()=>el.remove(),14000)}
+setInterval(makeHeart,650);
+const surprises=[
+'Barbelle, you are loved on your best days, your worst days, and your “Mimimimimi and absolutely no explanation” days. Especially those. 💗',
+'If hugs were Wi-Fi, Anjali, you would have full bars everywhere. Come collect your hug from Vinayak. 🫂',
+'BREAKING NEWS: Anjali Singh remains ridiculously adorable. Local boyfriend Vinayak Singh is still not acting normal about it. More at 11. 📰💕',
+'You are not an option in my settings, Barbelle. You are the whole app. And yes, I would accept all your cookies. 🍪',
+'If I had one coin for every time I thought about you, I could buy us snacks. So… basically, our snack budget is infinite. 🍓',
+'You deserve gentle love, belly laughs, peaceful days, and someone who keeps choosing you. I hope I get to keep showing you that, one day at a time. 🫶',
+'Mimimimimi. Translation: “I love you, Barbelle” in the language only our hearts and two very unserious people understand. 💞'
+];let last=-1;
+function revealSurprise(){let n;do{n=Math.floor(Math.random()*surprises.length)}while(n===last);last=n;document.getElementById('surpriseMessage').textContent=surprises[n];for(let i=0;i<12;i++)setTimeout(makeHeart,i*80)}
+</script>
+</body>
+</html>
